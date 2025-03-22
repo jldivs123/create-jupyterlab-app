@@ -54,7 +54,7 @@ install:
 ## 🚀 Start JupyterLab
 jupyter:
 	@echo "🚀 Starting JupyterLab..."
-	@source $(VENV_DIR)/bin/activate && jupyter lab $(NOTEBOOKS_DIR)
+	@jupyter lab $(NOTEBOOKS_DIR)
 
 ## 🛑 Stop JupyterLab (if running in background)
 stop-jupyter:
@@ -64,7 +64,7 @@ stop-jupyter:
 ## 🏃 Run Python script (e.g., `make run SCRIPT=script.py`)
 run:
 	@echo "🏃 Running Python script: $(SCRIPT)"
-	@source $(VENV_DIR)/bin/activate && python $(SCRIPT)
+	@python $(SCRIPT)
 
 # ==============================
 # 🔹 Cleanup & Utilities
